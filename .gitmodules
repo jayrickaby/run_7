@@ -1,0 +1,3 @@
+[submodule "external/frutiger7"]
+	path = external/frutiger7
+	url = https://github.com/jayrickaby/frutiger7
