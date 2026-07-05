@@ -115,6 +115,7 @@ ApplicationWindow {
                 Layout.preferredHeight: 24
                 Layout.preferredWidth: 86
 
+                highlighted: true
                 enabled: comboBox.editText !== ""
 
                 textVCenterOffset: -2
@@ -168,14 +169,17 @@ ApplicationWindow {
 
     InstructionDialog {
         id: cantFindDialog
-        // buttons: MessageDialog.Ok
-        contentText: `${pySystem.simpleOsName} cannot find '${comboBox.editText}'. Make sure you typed the name correctly, and then try again.`
-        // contentText: `Windows cannot find '${comboBox.editText}'. Make sure you typed the name correctly, and then try again.`
         title: comboBox.editText
+        contentText: `${pySystem.simpleOsName} cannot find '${comboBox.editText}'. Make sure you typed the name correctly, and then try again.`
+        instructionType: InstructionDialog.Critical
 
-        // icon: MessageDialog.Critical
+        buttons: DialogButtonBox.Ok
 
-        // onAccepted: root.visible = true
+        onButtonClicked: (role) => {
+            if (role === DialogButtonBox.AcceptRole) {
+                cantFindDialog.close()
+            }
+        }
     }
 
     Action {
