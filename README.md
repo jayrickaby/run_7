@@ -18,8 +18,8 @@ I made this in order to familiarise myself with creating a simple Qt Quick appli
 - ~~A config to customise parts of the application~~ (TODO)
 
 ## Gallery
-<img width="447" height="246" alt="image" src="https://github.com/user-attachments/assets/4a634922-aed1-4937-9008-7877cd137b3b" />
-<img width="555" height="165" alt="image" src="https://github.com/user-attachments/assets/0cf6d794-5db0-4b09-854c-ca457a6ad98e" />
+<img width="447" height="246" alt="image" src="https://github.com/user-attachments/assets/a64b1950-b816-4066-808f-5331c6f4d7ec" />
+<img width="555" height="165" alt="image" src="https://github.com/user-attachments/assets/cf5aff27-e8e7-4724-8236-3cd8c301f2e2" />
 
 ## Setup
 ```
