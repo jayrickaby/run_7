@@ -15,7 +15,8 @@
 
 ## v0.1.0 (2026-07-03)
 
-- Add elements and style with a frutiger aero theme
+- **styling**: Add elements and style with a frutiger aero theme
+  ([`05c41e9`](https://github.com/jayrickaby/run_7/commit/05c41e969d31bff48b6aea48b507993068ae52fb))
 
 
 ## v0.0.0 (2026-06-30)
