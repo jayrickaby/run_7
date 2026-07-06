@@ -37,7 +37,7 @@ ApplicationWindow {
     visible: true
     title: qsTr(pyApplication.currentTitle)
 
-    flags: Qt.Window | Qt.WindowCloseButtonHint
+    flags: Qt.Window | Qt.WindowTitleHint | Qt.WindowSystemMenuHint | Qt.WindowCloseButtonHint
 
     topPadding: 20
     bottomPadding: 20
@@ -152,9 +152,7 @@ ApplicationWindow {
             horizontalTileMode: BorderImage.Repeat
             verticalTileMode: BorderImage.Repeat
 
-            // Swap the image asset depending on whether the button is hovered or pressed
             source: dirAssets + imgBackground
-
         }
     }
 
