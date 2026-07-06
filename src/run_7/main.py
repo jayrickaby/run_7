@@ -13,12 +13,12 @@ if __name__ == "__main__":
     application = application.Application()
 
     app = QGuiApplication(sys.argv)
-    app.setWindowIcon(QIcon(application.icon))
+    app.setWindowIcon(QIcon(application.icon.toLocalFile()))
     app.setDesktopFileName("run_7")
 
     engine = QQmlApplicationEngine()
-    engine.addImportPath(application.parentPath)
-    engine.addImportPath(application.externalFolder)
+    engine.addImportPath(application.parentPath.toLocalFile())
+    engine.addImportPath(application.externalFolder.toLocalFile())
     engine.loadFromModule("qml", "Main")
     if not engine.rootObjects():
         sys.exit(-1)
