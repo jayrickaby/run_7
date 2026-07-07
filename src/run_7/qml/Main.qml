@@ -203,6 +203,7 @@ ApplicationWindow {
         id: closeAction
         text: qsTr("Cancel")
         shortcut: StandardKey.Cancel
+        enabled: !browseDialog.visible
         onTriggered: root.close()
     }
 }
