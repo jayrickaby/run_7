@@ -3,3 +3,6 @@
 .env
 *.egg-info
 .eggs/
+__pycache__/*
+*.pyc
+.vscode/*
