@@ -12,5 +12,5 @@
 - - [ ] Customise Shortcuts(?)
 - - [ ] Save History
 - - [ ] .desktop file editing
-- [ ] Add History
+- [X] Add History
 - [ ] Add Shortcuts

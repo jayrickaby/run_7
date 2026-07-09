@@ -44,6 +44,14 @@ ApplicationWindow {
     leftPadding: 12
     rightPadding: 12
 
+    Settings {
+        id: appSettings
+
+        category: "History"
+        property int historySize: 5
+        property list<string> urlHistory: []
+    }
+
     ColumnLayout {
         anchors.fill: parent
         spacing: 0
@@ -95,13 +103,20 @@ ApplicationWindow {
             }
             ComboBox {
                 id: comboBox
+                editable: true
+
+                model: appSettings.urlHistory
 
                 Layout.fillWidth: true
                 Layout.preferredHeight: 23
                 Layout.alignment: Qt.AlignTop
                 Layout.rightMargin: 2
 
-                editable: true
+                Component.onCompleted: {
+                    if (appSettings.urlHistory.length > 0) {
+                        contentItem.text = appSettings.urlHistory[0];
+                    }
+                }
             }
         }
         RowLayout {
@@ -189,7 +204,30 @@ ApplicationWindow {
             // TODO: Make this properly work. Should hide when cantFindDialog appears.
             // root.visible = false
 
-            success ? root.close() : cantFindDialog.show()
+            if (success) {
+                let newUrl = comboBox.editText.trim()
+
+                let currentQueue = Array.from(appSettings.urlHistory)
+
+                let existingIndex = currentQueue.indexOf(newUrl)
+
+                if (existingIndex !== -1) {
+                    currentQueue.splice(existingIndex, 1)
+                }
+
+                currentQueue.unshift(newUrl);
+
+                if (currentQueue.length > appSettings.historySize) {
+                    currentQueue.pop()
+                }
+
+                appSettings.urlHistory = currentQueue;
+
+                root.close()
+                return
+            }
+
+            cantFindDialog.show()
         }
     }
 

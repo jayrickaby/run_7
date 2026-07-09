@@ -10,11 +10,11 @@ This is an accurate-as-possible recreation of Window 7's Run Application in Qt Q
 I made this in order to familiarise myself with creating a simple Qt Quick application. It taught me how to create windows and style them with a theme in QML, how to write a backend for more important function calls in Python, and bridging them together via slots and signals. It also helped me learn the standard structure of Python projects which are distributed, like specifying package managers, a pyproject.toml and a versioning system.
 
 ## Features
-- Running applications, opening websites and viewing files.
+- Running applications, opening websites and viewing files
 - A browse dialog to precisely choose an application
 - A recreation of Window 7's Aero theme for increased accuracy
-- Reactive text based on the Operating System you are using
-- ~~Run History~~ (TODO)
+- Reactive text based on the OS you are using
+- Run History showing the last 5 items
 - ~~A config to customise parts of the application~~ (TODO)
 
 ## Gallery
