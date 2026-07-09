@@ -1,6 +1,7 @@
 # Run–7
 
 ![Logo](docs/assets/logo/logo_trans.png)
+
 A recreation of Window 7's Run Application
 
 ## About this project
@@ -31,6 +32,7 @@ Requirements: [uv](https://docs.astral.sh/uv/)
 ### KDE Plasma
 You can make the Window more accurate by appling a Window Rule, such as:
 ![Preview_Rules](docs/assets/previews/preview_kderules.png)
+
  It is highly recommended you use this alongside [AeroThemePlasma](https://gitgud.io/aeroshell/atp/aerothemeplasma).
 
 ## Disclaimer
