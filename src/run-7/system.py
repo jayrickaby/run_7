@@ -63,7 +63,7 @@ class System(QObject):
 
         return webbrowser.open(target)
 
-    @Slot(QUrl, result=QUrl)
+    @Slot(QUrl, result=str)
     def processFilePath(self, url):
         return os.path.abspath(url.toLocalFile())
 
