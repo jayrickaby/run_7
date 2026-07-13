@@ -29,11 +29,5 @@ uv run src/run-7/main.py
 ```
 Requirements: [uv](https://docs.astral.sh/uv/)
 
-### KDE Plasma
-You can make the Window more accurate by appling a Window Rule, such as:
-![Preview_Rules](docs/assets/previews/preview_kderules.png)
-
- It is highly recommended you use this alongside [AeroThemePlasma](https://gitgud.io/aeroshell/atp/aerothemeplasma).
-
 ## Disclaimer
 Microsoft® Windows™ is a registered trademark of Microsoft® Corporation. This name is used for referential use only, and does not aim to usurp copyrights from Microsoft. Microsoft Ⓒ 2026 All rights reserved. All resources belong to Microsoft Corporation.
