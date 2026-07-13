@@ -3,7 +3,7 @@ import webbrowser
 import os
 from settings import settings
 
-from PySide6.QtCore import QObject, Property, Slot
+from PySide6.QtCore import QObject, QUrl, Property, Slot
 from PySide6.QtQml import QmlElement
 
 QML_IMPORT_NAME = "jayrickaby.run7.system"
@@ -62,5 +62,9 @@ class System(QObject):
             target = f"file://{absolutePath}"
 
         return webbrowser.open(target)
+
+    @Slot(QUrl, result=QUrl)
+    def processFilePath(self, url):
+        return os.path.abspath(url.toLocalFile())
 
 system = System()

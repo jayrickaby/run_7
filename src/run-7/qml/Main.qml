@@ -177,8 +177,8 @@ ApplicationWindow {
         currentFolder: dirHome
 
         onAccepted: {
-            let resolved = Qt.resolvedUrl(currentFile)
-            comboBox.contentItem.text = "\"" + new URL(resolved).pathname + "\""
+            let resolved = System.processFilePath(currentFile)
+            comboBox.contentItem.text = "\"" + resolved + "\""
         }
     }
 
