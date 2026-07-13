@@ -7,6 +7,7 @@
 ## KDE Plasma
 You can make the Window more accurate by applying a Window Rule, such as:
 ![kde_winrules](assets/screenshots/kde_winrules.png)
+
 I calculate the y-position based off my screen height, window height and taskbar height.
 e.g. `1200` - `~216` - `~48` respectively = `936`. However, this is buggy and currently affects all windows!
 
