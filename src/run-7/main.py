@@ -6,6 +6,7 @@ from PySide6.QtGui import QGuiApplication, QIcon
 from PySide6.QtQml import QQmlApplicationEngine
 from PySide6.QtQml import qmlRegisterSingletonInstance
 
+# This is NOT unused
 from application import application, ORG_NAME, ORG_DOMAIN, APP_NAME
 from settings import settings
 from system import system
