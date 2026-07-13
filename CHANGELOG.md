@@ -2,6 +2,31 @@
 
 <!-- version list -->
 
+## v0.5.0 (2026-07-13)
+
+### Bug Fixes
+
+- **backend**: Attempt to enforce local .ini files for settings on all OSes
+  ([`2265906`](https://github.com/jayrickaby/run-7/commit/226590633b7286ac1eada7d27f78b579cd12e14b))
+
+- **backend**: Change enforcement of ini format to before instantiation
+  ([`6455a2b`](https://github.com/jayrickaby/run-7/commit/6455a2b10d1a4fe3503c8b62786f432fa2fbfbf1))
+
+- **backend**: Change return type of processFilePath to be string
+  ([`eb77e72`](https://github.com/jayrickaby/run-7/commit/eb77e72c44f9d0448e8e2848f2608800ba4c112f))
+
+- **backend**: Sent browsed urls to backend to be processed to try and fix file browsing on windows
+  ([`be8bd96`](https://github.com/jayrickaby/run-7/commit/be8bd96de4a8da32ce6204b4ef7d356b7b3beeda))
+
+- **docs**: Update readme setup guide to reflect new repo name
+  ([`24355c8`](https://github.com/jayrickaby/run-7/commit/24355c86779d55eeebbc396eb2f4a8aebe52a875))
+
+### Features
+
+- **docs**: Add config docs
+  ([`ad46239`](https://github.com/jayrickaby/run-7/commit/ad4623983b4fc20550f16cf0c81a4462d1d1b6aa))
+
+
 ## v0.4.0 (2026-07-09)
 
 ### Bug Fixes
