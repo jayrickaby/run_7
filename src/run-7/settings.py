@@ -10,9 +10,9 @@ QML_IMPORT_MAJOR_VERSION = 1
 class Settings(QObject):
     def __init__(self, parent=None):
         super().__init__(parent)
-        self._settings = QSettings(ORG_NAME, APP_NAME)
 
-        self._settings.setDefaultFormat(QSettings.Format.IniFormat)
+        QSettings.setDefaultFormat(QSettings.Format.IniFormat)
+        self._settings = QSettings(ORG_NAME, APP_NAME)
 
         # Appearance
         self.__prettyOsNames = bool(self._settings.value("Appearance/prettyOsNames", False))
