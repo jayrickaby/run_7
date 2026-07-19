@@ -26,7 +26,7 @@ build_command = """
     uv lock --upgrade-package "$PACKAGE_NAME"
     git add uv.lock
     uv build
-    ./scripts/build.sh
+    ./build.sh
 """
 
 [tool.semantic_release.branches.main]
