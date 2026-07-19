@@ -2,6 +2,25 @@
 
 <!-- version list -->
 
+## v0.6.0 (2026-07-20)
+
+### Bug Fixes
+
+- **config**: Fix location of build.sh in pyproject.toml
+  ([`fa21442`](https://github.com/jayrickaby/run-7/commit/fa214429a4000ccd6ee9b01e02da2341d667851c))
+
+### Features
+
+- **backend**: Have script cleanup nuitka intermediatary build directories
+  ([`84b4862`](https://github.com/jayrickaby/run-7/commit/84b4862fb8663b3e34b85f57f1d3fad48baea089))
+
+- **config**: Cleanup and prepare project for nuitka building
+  ([`a742b3a`](https://github.com/jayrickaby/run-7/commit/a742b3abadedd1bf8a336e6062d72f3a454c7251))
+
+- **window**: Add return key shortcut to run action
+  ([`1856a5e`](https://github.com/jayrickaby/run-7/commit/1856a5e91c9d8c5394c7da76063f709b4759c860))
+
+
 ## v0.5.0 (2026-07-13)
 
 ### Bug Fixes
