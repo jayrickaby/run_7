@@ -18,3 +18,5 @@ python -m nuitka src/run-7/main.py \
   --linux-icon=src/run-7/qml/assets/icons/icon.png \
   --include-qt-plugins=networkinformation,platforminputcontexts,qml,qmllint,qmltooling,vectorimageformats \
   --noinclude-qt-translations
+
+rm -rf dist/main.build dist/main.dist dist/main.onefile-build
