@@ -200,6 +200,7 @@ ApplicationWindow {
     Action {
         id: runAction
         text: qsTr("OK")
+        shortcut: "Return"
         onTriggered: {
             let success = System.open_url(comboBox.editText)
             // TODO: Make this properly work. Should hide when cantFindDialog appears.
