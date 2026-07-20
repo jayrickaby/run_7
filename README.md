@@ -21,11 +21,13 @@ I made this in order to familiarise myself with creating a simple Qt Quick appli
 ![Preview_Main](docs/assets/previews/preview_mainwindow.png)
 ![Preview_Dialog](docs/assets/previews/preview_unknowndialog.png)
 
-## Setup
+## Building from Source
 ```
 git clone https://github.com/jayrickaby/run-7.git && cd run-7
 git submodule update --init --recursive
-uv run src/run-7/main.py
+uv run src/run-7/main.py # To run the program
+
+chmod +x ./build.sh && ./build.sh # To build it into a binary
 ```
 Requirements: [uv](https://docs.astral.sh/uv/)
 
